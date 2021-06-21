@@ -13,7 +13,7 @@ spec:
     spec:            
       containers:
       - name: api
-        image: fabricioveronez/api-produto:{{tag}}
+        image: rssystem/api-produto:{{tag}}
         ports:
         - containerPort: 80
         imagePullPolicy: Always
@@ -40,4 +40,3 @@ spec:
   ports:
   - port: 80
     targetPort: 80
-  type: LoadBalancer
