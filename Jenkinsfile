@@ -12,7 +12,7 @@ pipeline {
         stage('Docker Build Image') {
             steps {
                 script {
-                    dockerapp = docker.build("ReinaldoSolano/pedelogo-catalogo:${env.BUILD_ID}",
+                    dockerapp = docker.build("rssystem/pedelogo-catalogo:${env.BUILD_ID}",
                       '-f ./src/PedeLogo.Catalogo.Api/Dockerfile .')
                 }
             }
